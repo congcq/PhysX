@@ -604,6 +604,22 @@ struct SupportFunctions {
         if(!typeID) return nullptr;
         return constraint.getExternalReference(*typeID);
     }
+
+    static physx::PxRigidActor* PxConstraint_getActor0(physx::PxConstraint& constraint)
+    {
+        physx::PxRigidActor* a0 = nullptr;
+        physx::PxRigidActor* a1 = nullptr;
+        constraint.getActors(a0, a1);
+        return a0; // may be nullptr
+    }
+
+    static physx::PxRigidActor* PxConstraint_getActor1(physx::PxConstraint& constraint)
+    {
+        physx::PxRigidActor* a0 = nullptr;
+        physx::PxRigidActor* a1 = nullptr;
+        constraint.getActors(a0, a1);
+        return a1; // may be nullptr
+    }
 };
 
 struct PxGjkQueryProximityInfoResult {
