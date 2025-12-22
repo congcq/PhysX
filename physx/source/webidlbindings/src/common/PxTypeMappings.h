@@ -24,6 +24,7 @@ typedef physx::PxReal* PxRealPtr;
 typedef physx::PxMaterial* PxMaterialPtr;
 typedef physx::PxActor* PxActorPtr;
 typedef physx::PxShape* PxShapePtr;
+typedef physx::PxConstraint* PxConstraintPtr;
 typedef physx::PxVehicleWheels* PxVehicleWheelsPtr;
 
 // template classes are not supported by webidl binder, as a hack we can use typedefs
@@ -74,6 +75,7 @@ public:
 
 typedef PxArrayExt<PxMaterialConstPtr> PxArray_PxMaterialConst;
 typedef PxArrayExt<PxActorPtr> PxArray_PxActorPtr;
+typedef PxArrayExt<PxConstraintPtr> PxArray_PxConstraintPtr;
 typedef PxArrayExt<PxShapePtr> PxArray_PxShapePtr;
 typedef PxArrayExt<physx::PxContactPairPoint> PxArray_PxContactPairPoint;
 typedef PxArrayExt<physx::PxHeightFieldSample> PxArray_PxHeightFieldSample;
