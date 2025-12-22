@@ -18,7 +18,6 @@ typedef const physx::PxReal* PxRealConstPtr;
 typedef const physx::PxMaterial* PxMaterialConstPtr;
 typedef physx::PxU8* PxU8Ptr;
 typedef physx::PxU16* PxU16Ptr;
-typedef physx::PxU32 PxU32;
 typedef physx::PxU32* PxU32Ptr;
 typedef physx::PxI32* PxI32Ptr;
 typedef physx::PxReal* PxRealPtr;
