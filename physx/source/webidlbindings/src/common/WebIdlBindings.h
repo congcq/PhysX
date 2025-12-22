@@ -599,10 +599,10 @@ struct SupportFunctions {
         return minVelIters;
     }
 
-    static void* PxConstraint_getExternalReference(physx::PxConstraint* constraint, PxU32Ptr typeID)
+    static void* PxConstraint_getExternalReference(physx::PxConstraint& constraint, PxU32Ptr typeID)
     {
-        if(!constraint || !typeID) return nullptr;
-        return constraint->getExternalReference(*typeID); // <- passes PxU32& correctly
+        if(!typeID) return nullptr;
+        return constraint.getExternalReference(*typeID);
     }
 };
 
