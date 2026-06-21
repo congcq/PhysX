@@ -7,6 +7,10 @@
   </CMakeSwitches>
   <CMakeParams>
     <cmakeParam name="CMAKE_INSTALL_PREFIX" value="install/jni-mac-aarch64/PhysX" comment="Install path relative to PhysX SDK root" />
-    <cmakeParam name="CMAKE_OSX_DEPLOYMENT_TARGET" value="11.0" comment="Mac minimum deployment target" />
+    <cmakeParam name="CMAKE_OSX_DEPLOYMENT_TARGET" value="14.0" comment="Mac minimum deployment target" />
+    <cmakeParam name="CMAKE_OSX_SYSROOT" value="/Applications/Xcode_15.4.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk" />
+    <cmakeParam name="CMAKE_XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY" value="" />
+    <cmakeParam name="CMAKE_XCODE_ATTRIBUTE_CODE_SIGNING_REQUIRED" value="NO" />
+    <cmakeParam name="CMAKE_XCODE_ATTRIBUTE_CODE_SIGNING_ALLOWED" value="NO" />
   </CMakeParams>
 </preset>
